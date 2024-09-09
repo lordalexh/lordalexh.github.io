@@ -31,9 +31,6 @@ a {
   font-weight: 700;
 }
 
-
-
-
 .container {
   position: relative;
   display: flex;
@@ -152,6 +149,14 @@ a {
   height: 40px;
 }
 
+.image-container img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Centers the image */
+}
+
+
 
 .buttons {
   display: flex;
@@ -219,18 +224,6 @@ a {
   background-color: #777;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-.image-container {
-    text-align: center; /* Centers the image horizontally */
-    margin-top: 20px; /* Adds space between the paragraphs and image */
-}
-
-.image-container img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 400px; /* Prevents the image from becoming too large */
-    height: auto; /* Maintains the aspect ratio */
-}
-
 
 /* @media (max-width: 600px) {
   body {
