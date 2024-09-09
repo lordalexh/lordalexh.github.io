@@ -33,12 +33,23 @@ if ('mediaSession' in navigator) {
     navigator.mediaSession.setActionHandler('pause', function() { audio.pause(); });
 }
 
+document.getElementById('playButton').addEventListener('click', function() {
+    var audio = document.getElementById('myAudio');
+    audio.play();
+    this.style.display = 'none';
+    document.getElementById('stopButton').style.display = 'inline-block';
+    document.getElementById('downloadButton').style.display = 'inline-block'; // Show download button when audio plays
+});
+
 document.getElementById('stopButton').addEventListener('click', function() {
     var audio = document.getElementById('myAudio');
-    audio.pause(); // Stop the audio
-    audio.currentTime = 0; // Reset audio to the start
-    this.style.display = 'none'; // Hide the stop button
-    document.getElementById('playButton').style.display = 'inline-block'; // Show the play button again
+    audio.pause();
+    audio.currentTime = 0; // Reset to start
+    this.style.display = 'none';
+    document.getElementById('playButton').style.display = 'inline-block';
+    document.getElementById('downloadButton').style.display = 'none'; // Hide download button when audio stops
 });
+
+
 
 });

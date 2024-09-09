@@ -46,6 +46,17 @@ a {
     width: 100%; /* Make sure the text spans the full width */
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+#downloadButton {
+    margin-top: 10px; /* Add spacing between the stop button and download button */
+}
 
 .container {
   position: relative;
