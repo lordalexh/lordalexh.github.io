@@ -31,6 +31,22 @@ a {
   font-weight: 700;
 }
 
+.pixel_button .button_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure it takes full height of the button */
+    width: 100%; /* Ensure it takes full width of the button */
+}
+
+.pixel_button .button_text {
+    font-size: 1.2rem; /* Adjust the size based on preference */
+    text-align: center;
+    line-height: 1.2; /* Ensure proper spacing */
+    width: 100%; /* Make sure the text spans the full width */
+}
+
+
 .container {
   position: relative;
   display: flex;
