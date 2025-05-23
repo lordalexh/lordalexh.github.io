@@ -14,7 +14,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             background: white;
@@ -22,6 +22,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 600px;
         }
         h1 {
             color: #333;
@@ -31,9 +32,18 @@
             color: #555;
             margin-top: 0;
         }
+        ul {
+            text-align: left;
+            margin-top: 1.5rem;
+            padding-left: 1.2rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
         a.button {
             display: inline-block;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             padding: 0.75rem 1.5rem;
             background-color: #0078d4;
             color: white;
@@ -50,6 +60,16 @@
     <div class="container">
         <h1>Velkommen til Hammers IT</h1>
         <p>Vi leverer IT-løsninger til små bedrifter og privatpersoner.</p>
+
+        <h2>Våre tjenester</h2>
+        <ul>
+            <li>Oppsett og optimalisering av Microsoft 365</li>
+            <li>Veiledning og migrering til skybaserte tjenester i Azure</li>
+            <li>Smart feilsøking og problemløsning på PC, nettverk og enheter</li>
+            <li>Sikkerhetsrådgivning og gode IT-vaner</li>
+            <li>Generell IT-støtte og brukervennlige løsninger</li>
+        </ul>
+
         <a id="contact-link" class="button" href="#">Kontakt oss</a>
     </div>
 
