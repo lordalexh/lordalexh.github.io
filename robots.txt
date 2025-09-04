@@ -1,0 +1,11 @@
+# robots.txt for https://hammers.no
+
+# Allow all search engines to crawl the main site
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Point crawlers to your sitemap
+Sitemap: https://hammers.no/sitemap.xml
