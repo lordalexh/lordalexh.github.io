@@ -1,183 +1,127 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hammers – IT-drift, Microsoft 365 og sikkerhet i Norge</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Hammers leverer IT-drift, Microsoft 365-optimalisering og sikkerhetsløsninger for små og mellomstore bedrifter i Norge. Vi gjør teknologi enklere og tryggere.">
-  <meta name="keywords" content="IT-drift, Microsoft 365, Azure, IT-sikkerhet, IT-støtte, skytjenester, Oslo, Norge">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://hammers.no/">
-
-  <!-- Social -->
-  <meta property="og:title" content="Hammers – IT-drift, Microsoft 365 og sikkerhet i Norge">
-  <meta property="og:description" content="Hammers leverer IT-drift, Microsoft 365-optimalisering og sikkerhetsløsninger for bedrifter.">
-  <meta property="og:url" content="https://hammers.no/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://hammers.no/images/og-image.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hammers – IT-drift, Microsoft 365 og sikkerhet i Norge">
-  <meta name="twitter:description" content="IT-støtte og sikkerhet for norske bedrifter – vi gjør teknologi enklere.">
-  <meta name="twitter:image" content="https://hammers.no/images/og-image.jpg">
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Hammers",
-    "url": "https://hammers.no",
-    "logo": "https://hammers.no/images/logo.png",
-    "description": "IT-drift, Microsoft 365-optimalisering og sikkerhet for bedrifter i Norge.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Oslo",
-      "addressCountry": "NO"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+4740095647",
-      "contactType": "customer service"
-    }
+    <meta name="description" content="Hammers leverer IT-drift, Microsoft 365-optimalisering og sikkerhetsløsninger for små og mellomstore bedrifter i Norge. Vi gjør teknologi enklere og tryggere.">
+    <meta name="keywords" content="IT-drift, Microsoft 365, Azure, IT-sikkerhet, IT-støtte, skytjenester, Oslo, Norge">
+    <link rel="canonical" href="https://hammers.no/">
+    <meta property="og:title" content="Hammers – IT-drift, Microsoft 365 og sikkerhet i Norge">
+    <meta property="og:description" content="Hammers leverer IT-drift, Microsoft 365-optimalisering og sikkerhetsløsninger for bedrifter.">
+    <meta property="og:url" content="https://hammers.no/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hammers.no/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hammers – IT-drift, Microsoft 365 og sikkerhet i Norge">
+    <meta name="twitter:description" content="IT-støtte og sikkerhet for norske bedrifter – vi gjør teknologi enklere.">
+    <meta name="twitter:image" content="https://hammers.no/images/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hammers",
+  "url": "https://hammers.no",
+  "logo": "https://hammers.no/images/logo.png",
+  "description": "IT-drift, Microsoft 365-optimalisering og sikkerhet for bedrifter i Norge.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Oslo",
+    "addressCountry": "NO"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+4740095647",
+    "contactType": "customer service"
   }
-  </script>
+}
+</script>
+<html lang="no">
+<meta name="robots" content="index, follow">
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Turnstile -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    .container {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      max-width: 600px;
-    }
-    .logo {
-      max-width: 160px;
-      margin-bottom: 1.5rem;
-    }
-    h1 { color: #333; margin-bottom: 0.5rem; }
-    p { color: #555; margin-top: 0; }
-    ul { text-align: left; margin-top: 1.5rem; padding-left: 1.2rem; }
-    ul li { margin-bottom: 0.5rem; color: #444; }
-    a.button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #0078d4;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: opacity .2s ease, background-color .2s ease;
-    }
-    a.button.locked {
-      pointer-events: none;
-      opacity: 0.6;
-    }
-    a.button:hover { background-color: #005a9e; }
-  </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammers IT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        .logo {
+            max-width: 160px;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #555;
+            margin-top: 0;
+        }
+        ul {
+            text-align: left;
+            margin-top: 1.5rem;
+            padding-left: 1.2rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #0078d4;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        a.button:hover {
+            background-color: #005a9e;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Hammers IT Logo" class="logo">
-    <h1>Velkommen til Hammers IT</h1>
-    <p>Vi leverer IT-løsninger til små bedrifter og privatpersoner.</p>
+    <div class="container">
+        <img src="logo.png" alt="Hammers IT Logo" class="logo">
+        <h1>Velkommen til Hammers IT</h1>
+        <p>Vi leverer IT-løsninger til små bedrifter og privatpersoner.</p>
 
-    <h2>Våre tjenester</h2>
-    <ul>
-      <li>Oppsett og optimalisering av Microsoft 365</li>
-      <li>Veiledning og migrering til skybaserte tjenester i Azure</li>
-      <li>Smart feilsøking og problemløsning på PC, nettverk og enheter</li>
-      <li>Sikkerhetsrådgivning og gode IT-vaner</li>
-      <li>Generell IT-støtte og brukervennlige løsninger</li>
-    </ul>
+        <h2>Våre tjenester</h2>
+        <ul>
+            <li>Oppsett og optimalisering av Microsoft 365</li>
+            <li>Veiledning og migrering til skybaserte tjenester i Azure</li>
+            <li>Smart feilsøking og problemløsning på PC, nettverk og enheter</li>
+            <li>Sikkerhetsrådgivning og gode IT-vaner</li>
+            <li>Generell IT-støtte og brukervennlige løsninger</li>
+        </ul>
 
-    <!-- Invisible Turnstile mount point -->
-    <div id="cf-turnstile" style="height:0;overflow:hidden;"></div>
+        <a id="contact-link" class="button" href="#">Kontakt oss</a>
+    </div>
 
-    <!-- Contact button (locked until Turnstile passes) -->
-    <a id="contact-link" class="button locked" href="#" aria-disabled="true">Kontakt oss</a>
-  </div>
-
-  <script>
-    (function () {
-      const email = "alexander@hammers.no";
-      const link = document.getElementById("contact-link");
-      let verified = false;
-      let widgetId = null;
-
-      // When Turnstile is ready, render an invisible widget
-      window.onloadTurnstileCallback = function () {
-        widgetId = turnstile.render('#cf-turnstile', {
-          sitekey: '0x4AAAAAABC1jvrJ2RXmku0K', // your site key
-          size: 'invisible',
-          callback: function (token) {
-            verified = true;
-            link.classList.remove('locked');
-            link.removeAttribute('aria-disabled');
-            // Open the mailto immediately after a successful challenge
-            window.location.href = "mailto:" + email;
-          }
-        });
-      };
-
-      // Defer user click until Turnstile passes
-      link.addEventListener('click', function (e) {
-        if (!verified) {
-          e.preventDefault();
-          try {
-            // Execute the invisible challenge
-            if (widgetId !== null && typeof turnstile.execute === 'function') {
-              turnstile.execute(widgetId);
-            }
-          } catch (err) {
-            // Fallback: don't expose mailto if challenge fails
-            console.error('Turnstile error', err);
-          }
-        } else {
-          // Already verified: open mailto
-          link.href = "mailto:" + email;
-        }
-      });
-
-      // Expose callback hook expected by Turnstile when api.js loads
-      window.turnstile || (window.turnstile = {});
-      window.turnstile.ready = function (fn) { fn(); };
-    })();
-  </script>
-
-  <!-- Tell Turnstile which callback to call when ready -->
-  <script>
-    // Cloudflare recommends using this global to know when API is ready.
-    // We re-route to onloadTurnstileCallback defined above.
-    document.addEventListener('DOMContentLoaded', function () {
-      if (window.onloadTurnstileCallback && window.turnstile && typeof window.turnstile.ready === 'function') {
-        window.turnstile.ready(window.onloadTurnstileCallback);
-      }
-    });
-  </script>
+    <script>
+        const user = "alexander";
+        const domain = "hammers.no";
+        const link = document.getElementById("contact-link");
+        link.href = `mailto:${user}@${domain}`;
+    </script>
 </body>
 </html>
