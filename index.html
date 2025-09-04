@@ -5,6 +5,7 @@
     <meta name="description" content="Hammers leverer IT-drift, Microsoft 365-optimalisering og sikkerhetsløsninger for små og mellomstore bedrifter i Norge. Vi gjør teknologi enklere og tryggere.">
     <meta name="keywords" content="IT-drift, Microsoft 365, Azure, IT-sikkerhet, IT-støtte, skytjenester, Oslo, Norge">
     <link rel="canonical" href="https://hammers.no/">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <meta property="og:title" content="Hammers – IT-drift, Microsoft 365 og sikkerhet i Norge">
     <meta property="og:description" content="Hammers leverer IT-drift, Microsoft 365-optimalisering og sikkerhetsløsninger for bedrifter.">
     <meta property="og:url" content="https://hammers.no/">
@@ -114,9 +115,31 @@
             <li>Sikkerhetsrådgivning og gode IT-vaner</li>
             <li>Generell IT-støtte og brukervennlige løsninger</li>
         </ul>
+<div id="turnstile-container">
+  <div class="cf-challenge" 
+       data-sitekey="0x4AAAAAABC1jvrJ2RXmku0K" 
+       data-callback="enableContactLink">
+  </div>
+    <script>
+  function enableContactLink(token) {
+    const user = "alexander";
+    const domain = "hammers.no";
+    const link = document.getElementById("contact-link");
 
-        <a id="contact-link" class="button" href="#">Kontakt oss</a>
+    // Unlock button
+    link.href = `mailto:${user}@${domain}`;
+    link.style.pointerEvents = "auto";
+    link.style.opacity = "1";
+  }
+</script>
+
+</div>
+
+<a id="contact-link" class="button" href="#" style="pointer-events: none; opacity: 0.5;">Kontakt oss</a>
+        
     </div>
+
+
 
     <script>
         const user = "alexander";
